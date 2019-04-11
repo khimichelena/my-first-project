@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=yes">
   <title>Вакансия: Junior Frontend Developer</title>
-  <link rel="stylesheet" href="main.css">
   <style>
    .leftpic {
    float: left;
@@ -13,59 +12,57 @@
   </style> 
  </head>
  <body>
+ <form>
   <h1>Вакансия: Junior Frontend Developer</h1>
-  <p><img src="image.png" width="150" height="210" class="leftpic"></p>
+  <p style="
+    display: inline-block;
+   ">
+   <img src="image.png" width="150" height="210" class="leftpic"> 
+  </p>
+  <div style="
+   display: inline-block;
+   vertical-align: top;
+   ">
   <p>Имя: <strong>Елена Химич</strong></p>
-  <p>Ссылка на репозиторий в GitHub: https://github.com/khimichelena/my-first-project</p>
+  <a href="https://github.com/khimichelena/my-first-project">Ссылка на репозиторий в GitHub:</a>
   <p>Опыт работы: нет</p>
-  <p>
-  <label for="date of interview">Дата собеседования:</p> 
-  <input type="date">
-  <form>
+  </div>
+  <p>Дата собеседования:         
+    <input type="date">
+  </p>
   <p>Уровень английского:</p>
-  <p><input type="radio">плохо
-     <input type="radio">средне
-	 <input type="radio">хорошо
-	 <input type="radio">превосходно</p>
-  </form>
+    <input name="level" type="radio" value="beginner A1"> начальный А1
+    <input name="level" type="radio" value="elementary A2">элементарный А2
+    <input name="level" type="radio" value="intermediate B1">средний В1
+    <input name="level" type="radio" value="upper-intermediate B2">средне-продвинутый В2
+	<input name="level" type="radio" value="advanced C1">продвинутый С1
+	<input name="level" type="radio" value="proficiency C2">в совершенстве С2
   <p>Ключевые навыки:</p>
   <ul>
   <li>HTML</li>
   <li>CSS/LESS</li>
   <li>JavaScript</li>
-  <li>...</li>
-  </ul>
-  
-  <form>
-  <label for="skills">Введите навык:</label>
+  <li>
   <input value="введите навык">
-  <input type="button" id="skills">
-  </form>
+  <input type="submit" value="добавить в список">
+  </li>
+  </ul>
   <p>Коммуникабельность:</p>
-  <form>
-  <p><select name="select">
-  <option value="s1" selected>введите значение</option>
-  <option value="s2">да я мертвого разговорю</option>
-  <option value="s3">умеренная коммуникабельность</option>
-  <option value="s4">ни в какие разговоры не вступаю, просьба контактировать со мной посредством е-мейл</option>
-  </p>
-  </form>
-  
-  <form>
+  <select>
+  <option value="" selected disabled hidden>введите значение</option>
+  <option value="1">да я мертвого разговорю</option>
+  <option value="2">умеренная коммуникабельность</option>
+  <option value="3">ни в какие разговоры не вступаю, просьба контактировать со мной посредством е-мейл</option>
+  </select>
    <p>
-   <label for="salary">Желаемая зарплата</label>
-   <input type="number" name="1" id="salary" value="100" >
-   </form>
-   
-   
-  
-  <form>
+   <label for="salary">Желаемая зарплата: </label>
+   <input type="number" name="salary" id="salary" value="500" step="100" min="100" max="1000000000000000000000000">
+   </p>
   <p>Подходит по критериям:</p>
   <p><input type="checkbox" name="a" value="knowledge of English">знание английского
      <input type="checkbox" name="a" value="salary">оклад 
 	 <input type="checkbox" name="a" value="skills">навыки
      <input type="checkbox" name="a" value="she is on of us, it is obvious" checked> сразу видно, что свой человек</p>
-  </form>
 <table>
 <table border=1>
 <caption>Образование, курсы и т.п.</caption>
@@ -94,8 +91,7 @@
 </tr>
 </tbody>
 </table>
-  <form>
-    <input type="submit" value="Отправить">
+  <input type="button" value="Отправить">
   </form>
  </body>
 </html>
