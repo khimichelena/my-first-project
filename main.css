@@ -1,0 +1,20 @@
+body{
+  font-family: Verdana;
+  border: 1px solid grey;
+}
+form{
+  width:1024px;
+}
+h1{
+  color: green;
+}
+p{
+  color: turquoise;
+}
+ ul{
+  list-style:none;
+}
+table{
+  background-color: turquoise;
+  color: green;
+}
