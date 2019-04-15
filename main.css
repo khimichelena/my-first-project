@@ -1,6 +1,10 @@
+* {
+  font-size: 20px;
+}
 body{
   font-family: Verdana;
   border: 1px solid grey;
+  padding: 3px;
 }
 form{
   width:1024px;
@@ -10,9 +14,34 @@ h1{
 }
 p{
   color: turquoise;
+  }
+  a.github_link{
+    color: green;
+    border: 1px solid palevioletred;
+  }
+  strong.violet_name{
+    color: palevioletred;
+    font-size: 30px;
+    font-style: Verdana;
+  }
+  
+.important {
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+input[type="date"] {
+  color: green;
+}
+#experience {
+  background-color: turquoise;
 }
  ul{
   list-style:none;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 table{
   background-color: turquoise;
