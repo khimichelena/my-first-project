@@ -16,11 +16,18 @@ h1{
 p{
   color: turquoise;
   }
-  a.github_link{
+  a{
+    text-decoration: none;
     color: green;
     border: 1px solid palevioletred;
   }
-  strong.violet_name{
+  a:visited {
+    color: turquoise;
+  }
+  a:hover {
+    color: palevioletred;
+  }
+  strong.my_name{
     color: palevioletred;
     font-size: 30px;
     font-style: Verdana;
@@ -35,16 +42,74 @@ p{
   margin-bottom: 10px;
 }
 input[type="date"] {
+  cursor: pointer;
   color: green;
 }
 #experience {
+  cursor: pointer;
   background-color: turquoise;
 }
  ul{
   list-style:none;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
-table{
-  background-color: turquoise;
+table:visited {}
+.table_row_1:hover {
+  color: turquoise;
+}
+.table_row_2:hover {
+  color: palevioletred;
+}
+.table_row_3:hover {
   color: green;
+}
+
+input[type="button"] {
+  cursor: pointer;
+  background-color: palevioletred;
+  margin: 10px 15px 20px 25px;
+  border: 4px dotted;
+  border-color:white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: inset 1px 1px 10px 5px rgba(0, 0, 0, 0.5);
+}
+input[type="button"]:visited {}
+input[type="button"]:hover {
+  opacity: 0.8 !important;
+}
+input[type="submit"] {
+  cursor: pointer;
+  background-color: palevioletred;
+  border: 4px dotted;
+  border-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: inset 1px 1px 10px 5px rgba(0, 0, 0, 0.5);
+}
+input[type="submit"]:visited{}
+input[type="submit"]:hover {
+  opacity: 0.8 !important;
+}
+input {
+  cursor: pointer;
+  outline: none;
+}
+p.label {
+ cursor: pointer;
+}
+.level_of_english {
+  cursor: pointer;
+}
+.input_skill {
+  cursor: pointer;
+}
+select.sociability {
+  cursor: pointer;
+}
+#salary {
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
 }
